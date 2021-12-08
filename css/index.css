@@ -1,0 +1,128 @@
+/* -------------------Background Styling --------------------*/
+html {
+  background-image: url("../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+/* -------------------Header Styling --------------------*/
+header{
+  margin: 2%;
+}
+h1 {
+  font-family: Pacifico;
+  font-size: 800%;
+  text-align: center;
+  color: #ebbd26;
+  text-shadow: 8px 8px rgb(85, 1, 85);
+}
+/* -------------------Form Styling --------------------*/
+form{
+  text-align: center;
+  margin:100px 3%;
+  margin-bottom:30px;
+}
+input{
+  width:200px;
+}
+#nameButton{
+  width:100px;
+  display:block;
+  margin:auto;
+  width:100px;
+  height:40px;
+  margin-top: 5px;
+  background-color: rgb(112, 10, 10);
+  font-weight: bold;
+  color:White;
+  font-size: large;
+}
+/* -------------------Game button styling Styling --------------------*/
+main ul li{
+  width: 38%;
+  height: 35%;
+  text-align: center;
+  font-size: 100%;
+}
+main ul li a{
+  text-decoration: none;
+}
+/* -------------------Red Poker Chip card trick styling Styling --------------------*/
+#cardTrick{
+  line-height: 2350%;
+  background-image: url("../img/chips/red chip.png");
+  background-repeat: no-repeat;
+  margin-left: 9%;
+  position: relative;
+  text-align: center;
+  width: 30%;
+  min-width: 400px;
+}
+#cardTrickHeading{
+  font-family: Pacifico;
+  text-align: left;
+  margin-left: 110px;
+  font-size: 180%;
+  color: white;
+  text-shadow: .3px .3px black;
+}
+/* -------------------Blue Poker Chip blackjack styling Styling --------------------*/
+#blackjack{
+  line-height: 2350%;
+  margin-left: 9%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../img/chips/blue chip.png");
+  width: 30%;
+  min-width: 400px;
+}
+main ul li  { transition: all .2s ease-in-out; }
+main ul li:hover { transform: scale(1.1); }
+
+#blackJackHeading{
+  font-family: Pacifico;
+  font-size: 160%;
+  text-align: left;
+  margin-left: 100px;
+  color: white;
+  text-shadow: .3px .3px black;
+  
+}
+/* -------------------Footer Styling --------------------*/
+footer img{
+  height: 80%;
+  width: 80%;
+  z-index: -1;
+}
+footer nav ul{
+  display: flex;
+  justify-content: flex-end;
+
+}
+footer li{
+  margin: 20%;
+  font-size: 135%;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+footer li img:hover{
+  animation: rotate 2s infinite linear;
+}
+footer h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

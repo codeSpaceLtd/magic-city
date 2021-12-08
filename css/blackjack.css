@@ -1,0 +1,78 @@
+html {
+  background-image: url('../img/aboutUs-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+header {
+  margin: 2%;
+}
+h1 {
+  font-family: Pacifico;
+  font-size: 800%;
+  text-align: center;
+  color: #ebbd26;
+  text-shadow: 8px 8px rgb(85, 1, 85);
+}
+main {
+  height: 550px;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 100px;
+  color: #ebbd26;
+  text-shadow: 2px 2px rgb(85, 1, 85);
+}
+#comingsoon {
+  margin-top: 200px;
+  font-family: Pacifico;
+  font-size: 800%;
+  text-align: center;
+  color: #ebbd26;
+  text-shadow: 8px 8px rgb(85, 1, 85);
+  animation: spin 8s infinite;
+}
+footer img {
+  height: 80%;
+  width: 80%;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  margin: 20%;
+  font-size: 135%;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+footer li img:hover {
+  animation: rotate 2s infinite linear;
+}
+footer h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/cardTrick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script defer src="../js/app.js"></script>
+    <script defer src="../js/cardTrick.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Magic City</h1> <!--Do we even need the button to have type submit?-->
+      <button type="submit" id="playAgain">Play again</button>
+    </header>
+    <main>
+      <h2>21 Card Trick</h2>
+      <section id="gameStart">
+        <h4>Instructions</h4>
+        <p>For this magic trick, you will be shown a selection of cards randomly generated from a deck. As soon as you have memorized the card, click on the 'Ready' button below the selection. This will bring you to a page with 3 columns containing a random set of 7 cards each. This set is from the previously displayed selection. You must now find your card and click on the column containing it. This will repeat 2 more times. At the end you will be shown your card and given your user statistics. The user statistics will only display if you have signed in to a user on the home page.</p>
+        <h3>Please memorize a card from this selection</h3>
+      </section>
+      <section id="columnSection">
+        <h3>Click on the column containing your card</h3>
+        <article id="columnArticle"></article>
+      </section>
+      <section id="resultsSection">
+        <h3>This was your card</h3>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <a href="../index.html">
+            <li>
+              <h3>Home</h3>
+              <img src="../img/chips/black chip.png" alt="HomeLink">
+            </li>
+          </a>
+          <a href="../html/aboutUs.html">
+            <li>
+              <h3>About Us</h3>
+              <img src="../img/chips/yellow chip.png" alt="AboutUsLink">
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

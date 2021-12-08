@@ -1,0 +1,163 @@
+html {
+  background-image: url('../img/aboutUs-background3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+}
+
+header {
+  margin: 2%;
+}
+h1 {
+  font-family: Pacifico;
+  font-size: 800%;
+  text-align: center;
+  color: #ebbd26;
+  text-shadow: 8px 8px rgb(85, 1, 85);
+  margin-bottom: 90px;
+}
+img {
+  height: 75px;
+  width: 75px;
+}
+
+/* Style the front side (fallback if image is missing) */
+/* .flip-card-front {
+  background-color: #bbb; 
+  color: black; 
+  border: 8px solid white;
+}
+ .flip-card-front img{
+  border: 3px solid gray;
+} */
+/* Style the back side */
+
+/* Fist row of cards info */
+
+.hiRow {
+  display: flex;
+  justify-content: center;
+}
+#marco {
+  margin-left: 90px;
+}
+#jason {
+  margin-left: 60px;
+}
+
+/* second row of cards */
+.lowRow {
+  display: flex;
+  justify-content: center;
+}
+#raaj {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+#antoine {
+  margin-top: 50px;
+  margin-left: 60px;
+}
+/* All card info */
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.pic {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 3px white solid;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 240px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 240px;
+  height: 300px;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-image: url(../img/cards/kdEmpty.png);
+  background-size: 240px;
+  color: black;
+  transform: rotateY(180deg);
+}
+/* Back of the card information */
+.flip-card-back h4 {
+  margin-top: 80px;
+  font-size: x-large;
+}
+#bio {
+  margin: 20px;
+  text-align: left;
+  font-size: larger;
+}
+.flip-card-back a {
+  margin: 20px;
+  font-size: larger;
+  text-decoration: none;
+}
+
+/* Footer info */
+footer img {
+  height: 80%;
+  width: 80%;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  margin: 20%;
+  font-size: 135%;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+footer li img:hover {
+  animation: rotate 2s infinite linear;
+}
+footer h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
